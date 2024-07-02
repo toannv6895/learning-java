@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="news-e2e-testing" />
         <module name="news-consumer" />
         <module name="news-producer" />
       </profile>
@@ -14,6 +15,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="news-consumer" options="-parameters" />
+      <module name="news-e2e-testing" options="-parameters" />
       <module name="news-producer" options="-parameters" />
     </option>
   </component>

@@ -17,3 +17,8 @@ docker compose down -v
 
 @REM run unit test
 ./mvnw clean test
+
+@REM Build docker image
+./mvnw clean spring-boot:build-image -DskipTests
+docker image build -t news-producer .
+docker image build -t news-consumer .
