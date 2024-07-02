@@ -14,3 +14,6 @@ curl -i -X POST localhost:8080/api/news \
 
 @REM Shutdown docker
 docker compose down -v
+
+@REM run unit test
+./mvnw clean test
