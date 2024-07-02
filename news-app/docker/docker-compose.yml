@@ -28,3 +28,12 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     healthcheck:
       test: [ "CMD", "nc", "-z", "localhost", "9092" ]
+
+  zipkin:
+    image: openzipkin/zipkin:2.24.3
+    container_name: zipkin
+    restart: unless-stopped
+    ports:
+      - "9411:9411"
+    healthcheck:
+      test: [ "CMD", "nc", "-z", "localhost", "9411" ]
