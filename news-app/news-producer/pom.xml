@@ -29,6 +29,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.2</spring-cloud.version>
+		<cloudevents.version>2.5.0</cloudevents.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -79,6 +80,11 @@
 		<dependency>
 			<groupId>io.zipkin.reporter2</groupId>
 			<artifactId>zipkin-reporter-brave</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.cloudevents</groupId>
+			<artifactId>cloudevents-core</artifactId>
+			<version>${cloudevents.version}</version>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
